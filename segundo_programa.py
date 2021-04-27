@@ -10,7 +10,7 @@
 
 while True:
     try:
-        personas = int(input('¿Cuántas personas se van a registrar?'))
+        personas = int(input('¿Cuántas personas se van a registrar?: '))
         break
     except ValueError:
         print("El valor ingresado no es un número, por favor ingrese un número")
@@ -36,7 +36,5 @@ for i in range(personas):
             return('mayor')
         elif edad >= 65 and edad <= 120:
             return('jubilado')
-        else:
-            return('cadaver')
 
     print(f'Su nombre es {nombre} {apellido} y usted es {edad_calculator()}')
